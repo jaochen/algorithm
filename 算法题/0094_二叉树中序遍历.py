@@ -14,14 +14,15 @@ class Solution(object):
 
     # 递归做法
     def DFSInorderTraversal(self, root):
-        result = []
         def dfs(root):
             if not root:
                 return
+            # 中序遍历逻辑，先访问左节点，再访问原节点，再访问右节点
             dfs(root.left)
             result.append(root.val)
             dfs(root.right)
         
+        result = []
         dfs(root)
         return result
 

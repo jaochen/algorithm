@@ -13,6 +13,14 @@
 s = "3[a]2[bc]", 返回 "aaabcbc".
 s = "3[a2[c]]", 返回 "accaccacc".
 s = "2[abc]3[cd]ef", 返回 "abcabccdcdcdef".
+
+# 遍历字符
+# if not ']':
+#     放进栈
+# else:
+#     将字母出栈
+#     将数字出栈
+#     将 字母*数字 进栈 
 '''
 class Solution:
     def decodeString(self, s: str) -> str:
